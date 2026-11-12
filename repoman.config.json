@@ -1,0 +1,292 @@
+{
+  "agent": {
+    "name": "repoman-agent",
+    "organization": "fluidmotiontv-oss",
+    "version": "2.4.0-dragon9",
+    "environment": "sovereign-local",
+    "nodeProfile": "antiX-termux-hybrid",
+    "temporalFramework": "Dragon 9",
+    "baseHarmonicFrequency": "432 Hz",
+    "maxConcurrency": 4,
+    "logLevel": "info"
+  },
+  "dragon9": {
+    "dayDurationMinutes": 1440,
+    "hourDurationMinutes": 54,
+    "dailyHourCycles": 26.6667,
+    "apexIntermissionMinutes": 18,
+    "motionPhaseMinutes": 36,
+    "calendarMonths": 13,
+    "daysPerMonth": 28,
+    "yearDayHarmonic": true,
+    "frequencyBaseHz": 432,
+    "tuningSystem": "Pythagorean Pure Harmonic Ratios"
+  },
+  "publishedApplets": [
+    {
+      "name": "RepoMan Autonomous Agent",
+      "env": "Development",
+      "url": "https://ais-dev-su4xdkgpj4jmjnona7qv2o-399044404940.asia-southeast1.run.app",
+      "description": "Real-time Dragon 9 chronometer, 432 Hz synthesizer, P2P mesh control, and Git automation engine."
+    },
+    {
+      "name": "RepoMan Agent Hub",
+      "env": "Staging / Preview",
+      "url": "https://ais-pre-su4xdkgpj4jmjnona7qv2o-399044404940.asia-southeast1.run.app",
+      "description": "Multi-node sovereign preview and public collaboration portal."
+    },
+    {
+      "name": "Dragon 9 Chronometer App",
+      "env": "Workspace App",
+      "url": "https://ais-dev-su4xdkgpj4jmjnona7qv2o-399044404940.asia-southeast1.run.app/#dragon9",
+      "description": "Standalone visual 54m cycle clock, 18m Apex timer, and 13-month harmonic calendar."
+    },
+    {
+      "name": "Resonance 432 Wave Studio",
+      "env": "Workspace App",
+      "url": "https://ais-dev-su4xdkgpj4jmjnona7qv2o-399044404940.asia-southeast1.run.app/#resonance",
+      "description": "Pythagorean micro-tuning generator and sinusoidal wave visualizer."
+    }
+  ],
+  "repositories": [
+    {
+      "id": "repo-dragon9-core",
+      "name": "fluidmotiontv-oss/dragon9-temporal-engine",
+      "category": "Core Protocols",
+      "path": "/app/applet/core/dragon9",
+      "branch": "main",
+      "visibility": "public",
+      "autoSync": true,
+      "upstream": "https://github.com/fluidmotiontv-oss/dragon9-temporal-engine",
+      "meshP2p": "p2p://mesh.fluidmotiontv.org/dragon9-temporal-engine",
+      "description": "Core engine calculating 54-minute hours, 18-minute Apex intervals, and 13-month harmonic calendar alignments.",
+      "tags": ["dragon9", "temporal-framework", "54m-cycle", "13-month-calendar", "432hz"]
+    },
+    {
+      "id": "repo-fluid-mesh",
+      "name": "fluidmotiontv-oss/fluid-motion-mesh",
+      "category": "Core Protocols",
+      "path": "/app/applet/mesh",
+      "branch": "sovereign",
+      "visibility": "public",
+      "autoSync": true,
+      "upstream": "https://github.com/fluidmotiontv-oss/fluid-motion-mesh",
+      "meshP2p": "p2p://mesh.fluidmotiontv.org/fluid-motion-mesh",
+      "description": "Zero-telemetry peer-to-peer gossip protocol synchronizing sovereign local nodes and state consensus.",
+      "tags": ["p2p-mesh", "decentralized", "gossipsub", "antix-linux", "termux", "dragon9"]
+    },
+    {
+      "id": "repo-wave-specs",
+      "name": "fluidmotiontv-oss/wave-protocol-specs",
+      "category": "Core Protocols",
+      "path": "/app/applet/specs",
+      "branch": "main",
+      "visibility": "public",
+      "autoSync": true,
+      "upstream": "https://github.com/fluidmotiontv-oss/wave-protocol-specs",
+      "meshP2p": "p2p://mesh.fluidmotiontv.org/wave-protocol-specs",
+      "description": "Technical specifications, mathematical formulas, and RFCs for organic fluid synchronization.",
+      "tags": ["specifications", "wave-mechanics", "standards", "sovereign-rfc", "dragon9"]
+    },
+    {
+      "id": "repo-spatial-wave",
+      "name": "fluidmotiontv-oss/spatial-wave-renderer",
+      "category": "Spatial Engines",
+      "path": "/app/applet/spatial/wave",
+      "branch": "main",
+      "visibility": "public",
+      "autoSync": true,
+      "upstream": "https://github.com/fluidmotiontv-oss/spatial-wave-renderer",
+      "meshP2p": "p2p://mesh.fluidmotiontv.org/spatial-wave-renderer",
+      "description": "High-performance WebGL/Three.js shader engine rendering harmonic sinusoidal surfaces and wave nodes.",
+      "tags": ["threejs", "webgl", "fluid-dynamics", "wave-oscillation", "spatial-ui"]
+    },
+    {
+      "id": "repo-chronometer-3d",
+      "name": "fluidmotiontv-oss/dragon9-chronometer-3d",
+      "category": "Spatial Engines",
+      "path": "/app/applet/spatial/clock",
+      "branch": "main",
+      "visibility": "public",
+      "autoSync": true,
+      "upstream": "https://github.com/fluidmotiontv-oss/dragon9-chronometer-3d",
+      "meshP2p": "p2p://mesh.fluidmotiontv.org/dragon9-chronometer-3d",
+      "description": "Real-time 3D orbital clock representing the 1,440-minute daily solar cycle and 18-minute Apex phases.",
+      "tags": ["3d-clock", "glsl", "temporal-visualization", "sovereign-display"]
+    },
+    {
+      "id": "repo-fluid-gl",
+      "name": "fluidmotiontv-oss/fluid-motion-gl",
+      "category": "Spatial Engines",
+      "path": "/app/applet/spatial/gl",
+      "branch": "main",
+      "visibility": "public",
+      "autoSync": true,
+      "upstream": "https://github.com/fluidmotiontv-oss/fluid-motion-gl",
+      "meshP2p": "p2p://mesh.fluidmotiontv.org/fluid-motion-gl",
+      "description": "Lightweight Navier-Stokes fluid motion canvas library optimized for low-spec hardware (<100MB RAM).",
+      "tags": ["webgl2", "fluid-simulation", "navier-stokes", "zero-bloat"]
+    },
+    {
+      "id": "repo-resonance-432",
+      "name": "fluidmotiontv-oss/resonance-432-audio",
+      "category": "Creative Suites",
+      "path": "/app/applet/audio",
+      "branch": "main",
+      "visibility": "public",
+      "autoSync": true,
+      "upstream": "https://github.com/fluidmotiontv-oss/resonance-432-audio",
+      "meshP2p": "p2p://mesh.fluidmotiontv.org/resonance-432-audio",
+      "description": "Pure Pythagorean tuning audio synthesizer generating 432 Hz fundamentals, pure fifths (648 Hz), and Apex chimes.",
+      "tags": ["432hz", "pythagorean-tuning", "web-audio-api", "harmonic-synth"]
+    },
+    {
+      "id": "repo-wave-studio",
+      "name": "fluidmotiontv-oss/wave-mechanics-studio",
+      "category": "Creative Suites",
+      "path": "/app/applet/studio",
+      "branch": "main",
+      "visibility": "public",
+      "autoSync": true,
+      "upstream": "https://github.com/fluidmotiontv-oss/wave-mechanics-studio",
+      "meshP2p": "p2p://mesh.fluidmotiontv.org/wave-mechanics-studio",
+      "description": "Digital sound design suite calibrated for binaural flow states and harmonic frequency alignment.",
+      "tags": ["audio-dsp", "sound-design", "phase-locked-loop", "overtone-series"]
+    },
+    {
+      "id": "repo-fluid-stream",
+      "name": "fluidmotiontv-oss/fluid-stream-tv",
+      "category": "Creative Suites",
+      "path": "/app/applet/stream",
+      "branch": "main",
+      "visibility": "public",
+      "autoSync": true,
+      "upstream": "https://github.com/fluidmotiontv-oss/fluid-stream-tv",
+      "meshP2p": "p2p://mesh.fluidmotiontv.org/fluid-stream-tv",
+      "description": "Sovereign decentralized media playback client operating on P2P mesh networks without centralized DRM.",
+      "tags": ["streaming", "media-player", "fluid-motion", "p2p-broadcast"]
+    },
+    {
+      "id": "repo-repoman-agent",
+      "name": "fluidmotiontv-oss/repoman-agent",
+      "category": "Tools",
+      "path": "/app/applet",
+      "branch": "main",
+      "visibility": "public",
+      "autoSync": true,
+      "upstream": "https://github.com/fluidmotiontv-oss/repoman-agent",
+      "meshP2p": "p2p://mesh.fluidmotiontv.org/repoman-agent",
+      "description": "The primary repository management agent with AI refactoring, automated rebase PRs, and job scheduling.",
+      "tags": ["autonomous-agent", "git-automation", "ai-patch", "repo-management", "dragon9"]
+    },
+    {
+      "id": "repo-antix-bridge",
+      "name": "fluidmotiontv-oss/antix-termux-bridge",
+      "category": "Tools",
+      "path": "/app/applet/bridge",
+      "branch": "main",
+      "visibility": "public",
+      "autoSync": true,
+      "upstream": "https://github.com/fluidmotiontv-oss/antix-termux-bridge",
+      "meshP2p": "p2p://mesh.fluidmotiontv.org/antix-termux-bridge",
+      "description": "Ultra-lightweight system daemon bridging antiX Linux desktops and Android Termux mobile edge nodes.",
+      "tags": ["antix-linux", "termux", "arm64", "low-footprint", "runit-init"]
+    },
+    {
+      "id": "repo-sovereign-git",
+      "name": "fluidmotiontv-oss/sovereign-git-sync",
+      "category": "Tools",
+      "path": "/app/applet/tools/gitsync",
+      "branch": "main",
+      "visibility": "public",
+      "autoSync": true,
+      "upstream": "https://github.com/fluidmotiontv-oss/sovereign-git-sync",
+      "meshP2p": "p2p://mesh.fluidmotiontv.org/sovereign-git-sync",
+      "description": "Air-gapped and P2P Git synchronization script with cryptographic signature verification.",
+      "tags": ["git-sync", "offline-first", "air-gap", "gpg-signing", "mesh-sync"]
+    }
+  ],
+  "jobs": [
+    {
+      "id": "job_dragon9_apex_flush",
+      "name": "Dragon 9 Apex Intermission Cycle Flush",
+      "schedule": "every 18m Apex",
+      "harmonicTrigger": "apex_start",
+      "enabled": true,
+      "command": "repoman apex run --flush-cache --mesh-ping"
+    },
+    {
+      "id": "job_dragon9_hour_sync",
+      "name": "54-Minute Harmonic Rebase & Lint",
+      "schedule": "every 54m Cycle",
+      "harmonicTrigger": "hour_boundary",
+      "enabled": true,
+      "command": "repoman job run job_lint_format && repoman sync --auto-pr"
+    },
+    {
+      "id": "job_lint_format",
+      "name": "Lint & Fluid Code Format",
+      "schedule": "0 */4 * * *",
+      "enabled": true,
+      "command": "npm run lint"
+    },
+    {
+      "id": "job_432hz_drift_calibration",
+      "name": "432 Hz Resonant Drift & Clock Sync",
+      "schedule": "0 0 * * *",
+      "harmonicTrigger": "daily_harmonic",
+      "enabled": true,
+      "command": "repoman 432hz calibrate --sample-rate=48000"
+    },
+    {
+      "id": "security_sovereign_audit",
+      "name": "Sovereign Air-Gap & Secret Leakage Audit",
+      "schedule": "every 26.667h",
+      "enabled": true,
+      "command": "repoman security-audit --zero-telemetry --verify-signatures"
+    },
+    {
+      "id": "ai_fluid_patch",
+      "name": "Fluid Motion Wave Refactoring",
+      "schedule": "manual",
+      "enabled": true,
+      "command": "repoman patch --ai --fluid --auto-apply"
+    }
+  ],
+  "meshTopology": {
+    "nodeId": "antix-node-432a",
+    "network": "fluidmotiontv-meshnet",
+    "discoveryProtocol": "gossip-sub-sovereign",
+    "activePeers": [
+      {
+        "peerId": "termux-node-09b",
+        "platform": "Termux (Android ARM64)",
+        "status": "connected",
+        "latencyMs": 14,
+        "harmonicSync": "432.00 Hz (Locked)"
+      },
+      {
+        "peerId": "antix-workstation-master",
+        "platform": "antiX Linux (x86_64 Sovereign)",
+        "status": "connected",
+        "latencyMs": 6,
+        "harmonicSync": "432.00 Hz (Locked)"
+      },
+      {
+        "peerId": "mesh-gateway-sol",
+        "platform": "Alpine Headless Router",
+        "status": "connected",
+        "latencyMs": 22,
+        "harmonicSync": "432.00 Hz (Locked)"
+      }
+    ]
+  },
+  "safety": {
+    "preventForcePush": true,
+    "requireConfirmationForDestructive": true,
+    "autoRollbackOnError": true,
+    "maxPatchFilesPerRun": 10,
+    "enforceZeroTelemetry": true,
+    "sovereignLocalAirGap": false
+  }
+}

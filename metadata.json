@@ -1,0 +1,6 @@
+{
+  "name": "Repoman Agent",
+  "description": "Autonomous local and Git workflow automation agent with AI patching, job scheduling, and secure workspace management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
